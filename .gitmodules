@@ -5,8 +5,8 @@
 [submodule "radiology-api"]
 	path = radiology-api
 	url = https://github.com/Pedro-Segatti/radiology-api.git
-    branch = main
+	branch = main
 [submodule "radiology-web-app"]
 	path = radiology-web-app
 	url = https://github.com/Pedro-Segatti/radiology-web-app.git
-    branch = main
+	branch = main
