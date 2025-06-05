@@ -1,9 +1,12 @@
 [submodule "radiology-ia-model"]
 	path = radiology-ia-model
 	url = https://github.com/Pedro-Segatti/radiology-ia-model.git
+	branch = main
 [submodule "radiology-api"]
 	path = radiology-api
 	url = https://github.com/Pedro-Segatti/radiology-api.git
+    branch = main
 [submodule "radiology-web-app"]
 	path = radiology-web-app
 	url = https://github.com/Pedro-Segatti/radiology-web-app.git
+    branch = main
