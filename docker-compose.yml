@@ -54,16 +54,16 @@ services:
     networks:
       - kafka-network
 
-  radiology-web-app:
-    build: ./radiology-web-app
-    ports:
-      - "3000:3000"
-    env_file:
-      - .env
-    depends_on:
-      - radiology-api
-    networks:
-      - kafka-network
+  # radiology-web-app:
+  #   build: ./radiology-web-app
+  #   ports:
+  #     - "3000:3000"
+  #   env_file:
+  #     - .env
+  #   depends_on:
+  #     - radiology-api
+  #   networks:
+  #     - kafka-network
 
 networks:
   kafka-network:
