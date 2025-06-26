@@ -28,18 +28,18 @@ services:
     networks:
       - kafka-network
 
-  # radiology-ia-model:
-  #   build: ./radiology-ia-model
-  #   ports:
-  #     - "5000:5000"
-  #   volumes:
-  #     - ./radiology-ia-model/src:/src
-  #   env_file:
-  #     - .env
-  #   depends_on:
-  #     - kafka
-  #   networks:
-  #     - kafka-network
+  radiology-ia-model:
+    build: ./radiology-ia-model
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./radiology-ia-model/src:/src
+    env_file:
+      - .env
+    depends_on:
+      - kafka
+    networks:
+      - kafka-network
   
   radiology-api:
     build: ./radiology-api
@@ -49,8 +49,8 @@ services:
       - ./radiology-api/src:/src
     env_file:
       - .env
-    # depends_on:
-    #   - radiology-ia-model
+    depends_on:
+      - radiology-ia-model
     networks:
       - kafka-network
 
